@@ -9,22 +9,22 @@ import { TH } from '../base/TD';
 const styles = {
   greeting: {
     paddingBottom: 30,
+    textTransform: 'capitalize',
   },
 };
 
-export default (props) => (
+export default ({ name }) => (
   <Section>
     <Table width="100%">
       <TBody>
         <TR>
           <TH style={styles.greeting}>
-            Hey Steve!
+            Hey {name}!
           </TH>
         </TR>
         <TR>
           <TD align="left">
-            Thank you for your order, your order.
-            Your order number is 12345678.
+            Thank you for your order.
             Please check the details below are correct.
           </TD>
         </TR>

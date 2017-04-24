@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "dependencies": {
+    "date-fns": "^1.28.3",
     "lodash": "^4.17.4",
     "oy-vey": "^0.8.0",
     "react": "^15.5.4",

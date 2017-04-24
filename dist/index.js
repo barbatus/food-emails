@@ -19,8 +19,10 @@ var _OrderConfirmation2 = _interopRequireDefault(_OrderConfirmation);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var renderOrderConfirmationEmail = exports.renderOrderConfirmationEmail = function renderOrderConfirmationEmail(total, address, items) {
+var renderOrderConfirmationEmail = exports.renderOrderConfirmationEmail = function renderOrderConfirmationEmail(name, total, deliveryDate, address, items) {
   return _oyVey2.default.renderTemplate(_react2.default.createElement(_OrderConfirmation2.default, {
+    name: name,
+    deliveryDate: deliveryDate,
     address: address,
     items: items,
     total: total

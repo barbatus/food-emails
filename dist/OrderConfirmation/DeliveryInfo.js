@@ -10,13 +10,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _oyVey = require('oy-vey');
 
+var _format = require('date-fns/format');
+
+var _format2 = _interopRequireDefault(_format);
+
 var _Section = require('../base/Section');
 
 var _Section2 = _interopRequireDefault(_Section);
 
 var _TD = require('../base/TD');
 
-var _format = require('../utils/format');
+var _format3 = require('../utils/format');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -47,7 +51,7 @@ var Address = function Address(_ref) {
         _react2.default.createElement(
           _oyVey.TD,
           null,
-          (0, _format.formatName)(firstName, lastName)
+          (0, _format3.formatName)(firstName, lastName)
         )
       ),
       _react2.default.createElement(
@@ -73,7 +77,8 @@ var Address = function Address(_ref) {
 };
 
 exports.default = function (_ref2) {
-  var address = _ref2.address;
+  var deliveryDate = _ref2.deliveryDate,
+      address = _ref2.address;
   return _react2.default.createElement(
     _Section2.default,
     null,
@@ -108,7 +113,8 @@ exports.default = function (_ref2) {
           _react2.default.createElement(
             _oyVey.TD,
             { align: 'left', vAlign: 'top' },
-            'Will be delivered on Thursday, April 13th'
+            'Will be delivered on ',
+            (0, _format2.default)(deliveryDate, 'dddd, MMMM D')
           )
         )
       )

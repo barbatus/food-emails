@@ -43,7 +43,9 @@ var _FAQ2 = _interopRequireDefault(_FAQ);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (_ref) {
-  var address = _ref.address,
+  var name = _ref.name,
+      deliveryDate = _ref.deliveryDate,
+      address = _ref.address,
       items = _ref.items,
       total = _ref.total;
 
@@ -54,8 +56,11 @@ exports.default = function (_ref) {
     _react2.default.createElement(
       _Body2.default,
       null,
-      _react2.default.createElement(_OrderInfo2.default, null),
-      _react2.default.createElement(_DeliveryInfo2.default, { address: address }),
+      _react2.default.createElement(_OrderInfo2.default, { name: name }),
+      _react2.default.createElement(_DeliveryInfo2.default, {
+        deliveryDate: deliveryDate,
+        address: address
+      }),
       _react2.default.createElement(_ShopItems2.default, { items: items }),
       _react2.default.createElement(_TotalInfo2.default, { total: total }),
       _react2.default.createElement(_FAQ2.default, null)

@@ -19,10 +19,10 @@ const Header = (props) => {
                 <TR>
                   <TD align="left">
                     <Img
-                      width={291}
-                      height={32}
+                      width={150}
+                      height={40}
                       alt="Nomiku Sous Chef Meals"
-                      src="https://img.nom.io/common/longlogo.svg"
+                      src="https://img.nom.io/common/logo.png"
                     />
                   </TD>
                 </TR>

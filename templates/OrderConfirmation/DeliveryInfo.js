@@ -2,6 +2,8 @@ import React from 'react';
 
 import {Table, TBody, TD, TR} from 'oy-vey';
 
+import formatDate from 'date-fns/format';
+
 import Section from '../base/Section';
 
 import { TH } from '../base/TD';
@@ -47,7 +49,7 @@ const Address = ({
   );
 };
 
-export default ({ address }) => (
+export default ({ deliveryDate, address }) => (
   <Section>
     <Table width="100%">
       <TBody>
@@ -64,7 +66,7 @@ export default ({ address }) => (
             <Address info={address} />
           </TD>
           <TD align="left" vAlign="top">
-            Will be delivered on Thursday, April 13th
+            Will be delivered on {formatDate(deliveryDate, 'dddd, MMMM D')}th
           </TD>
         </TR>
       </TBody>

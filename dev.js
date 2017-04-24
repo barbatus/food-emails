@@ -2,6 +2,10 @@ import http from 'http';
 
 import { renderOrderConfirmationEmail } from './templates';
 
+const name = 'Alex';
+
+const deliveryDate = new Date(2017, 4, 4);
+
 const address = {
   firstName: 'Alex',
   lastName: 'Broda',
@@ -34,7 +38,8 @@ const total = {
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.end(renderOrderConfirmationEmail(total, address, items));
+  res.end(renderOrderConfirmationEmail(
+    name, total, deliveryDate, address, items));
 });
 
 server.listen(5001);

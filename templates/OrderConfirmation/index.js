@@ -16,13 +16,16 @@ import TotalInfo from './TotalInfo';
 
 import FAQ from './FAQ';
 
-export default ({ address, items, total }) => {
+export default ({ name, deliveryDate, address, items, total }) => {
   return (
     <Layout>
       <Header />
       <Body>
-        <OrderInfo />
-        <DeliveryInfo address={address} />
+        <OrderInfo name={name} />
+        <DeliveryInfo
+          deliveryDate={deliveryDate}
+          address={address}
+        />
         <ShopItems items={items} />
         <TotalInfo total={total} />
         <FAQ />

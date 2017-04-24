@@ -20,11 +20,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var styles = {
   greeting: {
-    paddingBottom: 30
+    paddingBottom: 30,
+    textTransform: 'capitalize'
   }
 };
 
-exports.default = function (props) {
+exports.default = function (_ref) {
+  var name = _ref.name;
   return _react2.default.createElement(
     _Section2.default,
     null,
@@ -40,7 +42,9 @@ exports.default = function (props) {
           _react2.default.createElement(
             _TD.TH,
             { style: styles.greeting },
-            'Hey Steve!'
+            'Hey ',
+            name,
+            '!'
           )
         ),
         _react2.default.createElement(
@@ -49,7 +53,7 @@ exports.default = function (props) {
           _react2.default.createElement(
             _oyVey.TD,
             { align: 'left' },
-            'Thank you for your order, your order. Your order number is 12345678. Please check the details below are correct.'
+            'Thank you for your order. Please check the details below are correct.'
           )
         )
       )
