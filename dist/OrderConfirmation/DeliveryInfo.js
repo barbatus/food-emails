@@ -114,7 +114,8 @@ exports.default = function (_ref2) {
             _oyVey.TD,
             { align: 'left', vAlign: 'top' },
             'Will be delivered on ',
-            (0, _format2.default)(deliveryDate, 'dddd, MMMM D')
+            (0, _format2.default)(deliveryDate, 'dddd, MMMM D'),
+            'th'
           )
         )
       )
