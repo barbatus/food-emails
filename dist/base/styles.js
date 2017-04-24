@@ -22,7 +22,8 @@ exports.default = {
   body: {
     padding: '0 ' + padding,
     fontFamily: 'Arial',
-    fontSize: '14px'
+    fontSize: '14px',
+    color: '#444444'
   },
   header: {
     padding: '0 ' + padding,

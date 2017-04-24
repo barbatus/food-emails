@@ -21,7 +21,7 @@ const TotalRow = ({ style = {}, name, price }) => (
       {name}
     </TD>
     <TD style={style} align="right" width="15%">
-      {formatPrice(price, true)}
+      {price}
     </TD>
   </TR>
 );
@@ -32,19 +32,19 @@ export default ({ total: { total, tax, shipping } }) => (
       <TBody>
         <TotalRow
           name="Subtotal"
-          price={total - tax - shipping}
+          price={formatPrice(total - tax - shipping)}
         />
         <TotalRow
           name="Tax"
-          price={tax}
+          price={formatPrice(tax)}
         />
         <TotalRow
           name="Shipping"
-          price={shipping}
+          price={formatPrice(shipping, true)}
         />
         <TotalRow
           name="Total"
-          price={total}
+          price={formatPrice(total)}
           style={styles.total}
         />
       </TBody>

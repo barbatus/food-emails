@@ -43,7 +43,7 @@ var TotalRow = function TotalRow(_ref) {
     _react2.default.createElement(
       _oyVey.TD,
       { style: style, align: 'right', width: '15%' },
-      (0, _format.formatPrice)(price, true)
+      price
     )
   );
 };
@@ -64,19 +64,19 @@ exports.default = function (_ref2) {
         null,
         _react2.default.createElement(TotalRow, {
           name: 'Subtotal',
-          price: total - tax - shipping
+          price: (0, _format.formatPrice)(total - tax - shipping)
         }),
         _react2.default.createElement(TotalRow, {
           name: 'Tax',
-          price: tax
+          price: (0, _format.formatPrice)(tax)
         }),
         _react2.default.createElement(TotalRow, {
           name: 'Shipping',
-          price: shipping
+          price: (0, _format.formatPrice)(shipping, true)
         }),
         _react2.default.createElement(TotalRow, {
           name: 'Total',
-          price: total,
+          price: (0, _format.formatPrice)(total),
           style: styles.total
         })
       )
