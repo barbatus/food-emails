@@ -1,0 +1,23 @@
+{
+  "name": "food-emails",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "oy-vey": "^0.8.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "scripts": {
+    "dev": "nodemon dev.js --delay 2 --exec babel-node",
+    "build": "babel templates -d dist"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.11.0"
+  }
+}
