@@ -46,6 +46,7 @@ var Header = function Header(props) {
                   _oyVey.TD,
                   { align: 'left' },
                   _react2.default.createElement(_oyVey.Img, {
+                    style: _styles2.default.logo,
                     width: 150,
                     height: 40,
                     alt: 'Nomiku Sous Chef Meals',

@@ -37,9 +37,18 @@ exports.default = {
   th: {
     fontWeight: 'bold'
   },
+  td: {
+    fontSize: 'inherit',
+    lineHeight: 'inherit'
+  },
   a: {
     color: '#85c545',
     fontWeight: 'bold',
     textDecoration: 'none'
+  },
+  logo: {
+    color: '#85c545',
+    fontWeight: 'bold',
+    fontSize: 24
   }
 };

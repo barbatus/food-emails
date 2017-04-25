@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { TD } from 'oy-vey';
+import { TD as OYTD } from 'oy-vey';
 
 import styles from './styles';
 
 export const TH = ({ style, children, ...rest }) => (
-  <TD
+  <OYTD
     align="left"
     style={{
       ...styles.th,
@@ -14,5 +14,18 @@ export const TH = ({ style, children, ...rest }) => (
     {...rest}
   >
     {children}
-  </TD>
+  </OYTD>
+);
+
+export const TD = ({ style, children, ...rest }) => (
+  <OYTD
+    align="left"
+    style={{
+      ...styles.td,
+      ...style,
+    }}
+    {...rest}
+  >
+    {children}
+  </OYTD>
 );

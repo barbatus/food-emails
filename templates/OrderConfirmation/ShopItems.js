@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Table, TBody, TD, TR } from 'oy-vey';
+import { Table, TBody, TR } from 'oy-vey';
 
 import Section from '../base/Section';
 
-import { TH } from '../base/TD';
+import { TH, TD } from '../base/TD';
 
 import { formatPrice } from '../utils/format';
 

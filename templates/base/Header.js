@@ -19,6 +19,7 @@ const Header = (props) => {
                 <TR>
                   <TD align="left">
                     <Img
+                      style={styles.logo}
                       width={150}
                       height={40}
                       alt="Nomiku Sous Chef Meals"

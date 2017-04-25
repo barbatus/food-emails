@@ -38,17 +38,17 @@ var ShopItem = function ShopItem(_ref) {
     _oyVey.TR,
     null,
     _react2.default.createElement(
-      _oyVey.TD,
+      _TD.TD,
       { style: styles.td, align: 'left', width: '70%' },
       name
     ),
     _react2.default.createElement(
-      _oyVey.TD,
+      _TD.TD,
       { style: styles.td, align: 'left', width: '20%' },
       value
     ),
     _react2.default.createElement(
-      _oyVey.TD,
+      _TD.TD,
       { style: styles.td, align: 'center', width: '10%' },
       (0, _format.formatPrice)(price)
     )
